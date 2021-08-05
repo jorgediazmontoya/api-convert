@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/files', [FileController::class, 'store']);
 Route::get('/files/{name}', [FileController::class, 'download']);
+Route::post('/files/{name}', [FileController::class, 'download']);
